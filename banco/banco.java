@@ -2,8 +2,8 @@ package banco;
 
 public class banco {
     public static void main(String[] args) {
-    banco per1 = new banco();
-    banco per2 = new banco("Jesus",2500);
+    cuenta per1 = new cuenta();
+    cuenta per2 = new cuenta("Jesus",2500);
     System.out.println(per2.datosBanco());
     
     //Deposita en la cuenta
