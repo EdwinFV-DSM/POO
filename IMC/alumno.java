@@ -22,9 +22,9 @@ public class alumno {
             System.out.println("Ingrese su talla");
             talla=obj.next();
             validacion eje2 = new validacion(nombre, edad, calificacion, peso, talla);
-            System.out.print("Tu edad es: "+eje.aumentaEdad(edad)+" años \n");
-            System.out.print("Tu calificacion es: "+eje.obtenerCalificacion(calificacion)+"\n");
-            System.out.print("Tu peso es: "+eje.obtenerIMC(peso)+"\n");
+            System.out.print("Tu edad es: "+eje2.aumentaEdad(edad)+" años \n");
+            System.out.print("Tu calificacion es: "+eje2.obtenerCalificacion(calificacion)+"\n");
+            System.out.print("Tu peso es: "+eje2.obtenerIMC(peso)+"\n");
         }
     }
 }
