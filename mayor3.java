@@ -24,30 +24,31 @@ public class mayor3 {
         if(num1>num2) {
             if(num1>num3) {
                 if(num2>num3) {
-                    msg = "Orden Ascendente: " + num3 + " " + num2 + " " + num1);
-                    System.out.println("Orden descendente: " + num1 + " " + num2 + " " + num3);                 
+                    msg = "Orden Ascendente: " + num3 + " " + num2 + " " + num1;
+                    msg = "Orden descendente: " + num1 + " " + num2 + " " + num3;                 
                 }else {
-                    System.out.println("Orden Ascendente: " + num1 + " " + num3 + " " + num2);
-                    System.out.println("Orden descendente: " + num2 + " " + num3 + " " + num1);
+                    msg = "Orden Ascendente: " + num1 + " " + num3 + " " + num2;
+                    msg = "Orden descendente: " + num2 + " " + num3 + " " + num1;
                 }
             }else {
-                System.out.println("Orden Ascendente: " + num2 + " " + a + " " + c);
-                System.out.println("Orden descendente: " + c + " " + a + " " + b);
+                msg = "Orden Ascendente: " + num2 + " " + num1 + " " + num3;
+                msg = "Orden descendente: " + num3 + " " + num1 + " " + num2;
             }
         }else {
             if(num2>num3) {
                 if(num1>num3) {
-                    System.out.println("Orden Ascendente: " + c + " " + a + " " + b);
-                    System.out.println("Orden descendente: " + b + " " + a + " " + c);
+                    msg = "Orden Ascendente: " + num3 + " " + num1 + " " + num2;
+                    msg = "Orden descendente: " + num2 + " " + num1 + " " + num3;
                 }else {
-                    System.out.println("Orden Ascendente: " + a + " " + c + " " + b);
-                    System.out.println("Orden descendente: " + b + " " + c + " " + a);
+                    msg = "Orden Ascendente: " + num1 + " " + num3 + " " + num2;
+                    msg = "Orden descendente: " + num2 + " " + num3 + " " + num1;
                 }              
             }else {
-                System.out.println("Orden Ascendente: " + a + " " + b + " " + c);
-                System.out.println("Orden descendente: " + c + " " + b + " " + a);
+                msg = "Orden Ascendente: " + num1 + " " + num2 + " " + num3;
+                msg = "Orden descendente: " + num3 + " " + num2 + " " + num1;
             }
         }
-    }
+        return msg;
     }
 }
+
