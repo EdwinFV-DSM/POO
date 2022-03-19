@@ -2,7 +2,6 @@ import java.io.*;
 public class ejercicio3 {
     public static void main(String args[]) throws IOException {
 		BufferedReader bufEntrada = new BufferedReader(new InputStreamReader(System.in));
-		String articulo;
 		double metodo;
 		double pago;
 		double precio;
@@ -12,7 +11,6 @@ public class ejercicio3 {
 		producto = 1;
 		precio = 0;
 		System.out.println("Ingrese el nombre del producto");
-		articulo = bufEntrada.readLine();
 		System.out.println("Ingrese el precio del producto");
 		precio = Double.parseDouble(bufEntrada.readLine());
 		producto = producto+1;
