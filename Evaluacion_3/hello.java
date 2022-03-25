@@ -5,3 +5,13 @@ public class hello {
         System.out.println("Bienvenido a la universidad");
     }
 }
+
+
+/*
+
+Como derivar una clase
+
+como derivar metodos y atributos
+
+como sobreescribir metodos
+*/

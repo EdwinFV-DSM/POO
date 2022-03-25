@@ -22,11 +22,11 @@ public class ejmploMetodos {
         d=obj.nextInt();
         m=obj.nextInt();
         a=obj.nextInt();
-        System.out.print(ejmploMetodos.obtenerFecha(d,m,a));
+        System.out.print(ejmploMetodos.Meses(d,m,a));
 
     }
 
-    public static String obtenerFecha(int d, int m ,int a){
+    public static String Meses(int d, int m ,int a){
         String msg = "";
         double suma = 0;
         switch (m) {
