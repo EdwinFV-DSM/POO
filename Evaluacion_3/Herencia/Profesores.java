@@ -32,6 +32,22 @@ public class Profesores extends Persona{
         msg = super.mostrarDatos()+" eres "+titulo+" con cedula "+cedula;
         return msg;
     }
+
+    public boolean cedulaVal(){
+        boolean msg;
+
+
+        String cedula1= String.valueOf(cedula);
+        
+        if (cedula1.length()>= 8 && cedula1.length() <= 10) {
+            msg = true;
+        }else{
+            msg = false;
+        }
+
+
+        return msg;
+    }
 }
 
 

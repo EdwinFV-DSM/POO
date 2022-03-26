@@ -8,13 +8,15 @@ public class principal {
         //System.out.println(p2.mostrarDatos());
 
         Profesores P1 = new Profesores();
-        Profesores P2 = new Profesores("Apolinar","12/12/1980", "UTVT", "55550000" ,"IC", 1234); 
+        Profesores P2 = new Profesores("Apolinar","12/12/1980", "UTVT", "55550000" ,"IC", 123); 
         System.out.println(P2.mostrarDatos());
+        System.out.println(P2.cedulaVal());
 
-        Estudiante E1 = new Estudiante();
-        Estudiante E2 = new Estudiante("Apolinar","12/12/1980", "UTVT", "55550000" ,"IC", 7); 
-        System.out.println(P2.mostrarDatos());
-        System.out.println(E2.Calificacion());
+
+        /*Estudiante E1 = new Estudiante();
+        Estudiante E2 = new Estudiante("Apolinar","12/12/1980", "UTVT", "55550000" ,"IC", 10); 
+        System.out.println(E2.mostrarDatos());
+        System.out.println(E2.Calificacion());*/
     }
 
 }

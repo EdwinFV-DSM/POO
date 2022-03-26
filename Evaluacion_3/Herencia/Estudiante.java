@@ -37,12 +37,14 @@ public class Estudiante extends Persona{
     public String Calificacion(){
         String msg ="";
         
-        if (promedio >= 0 || promedio <= 10) {
+        if (promedio >= 0 && promedio <= 10) {
             if (promedio < 8) {
+                msg = "Reprobado";
+            }else if (promedio >= 8 ){
                 msg = "Aprobado";
             }
-        }else if (promedio > 10){
-            msg = "Reprobado";
+        }else{
+            msg = "false";
         }
         return msg;
     }
