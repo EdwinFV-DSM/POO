@@ -1,5 +1,5 @@
 package evaluacion_2;
-public class banco {
+public class banco2 {
 
     /**
      * 1.-crear una clase llamada banco y otra llamada cuenta
@@ -23,11 +23,11 @@ public class banco {
      String titular;
      double salario;
 
-     public banco(){
+     public banco2(){
         
     }
 
-    public banco(String titular,double salario){
+    public banco2(String titular,double salario){
         this.titular = "Juan Carlos";
         this.salario = 2500;
     }
