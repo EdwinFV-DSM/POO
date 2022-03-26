@@ -1,5 +1,6 @@
+package evaluacion_2;
 import java.util.Scanner;
-import java.util.Scanner;
+
 public class area {
     public static void main(String[] args) {
         

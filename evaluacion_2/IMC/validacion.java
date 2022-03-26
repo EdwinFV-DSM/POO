@@ -1,4 +1,4 @@
-package IMC;
+package evaluacion_2.IMC;
 
 public class validacion {
     String nombre;

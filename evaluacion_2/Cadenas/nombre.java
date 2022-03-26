@@ -1,4 +1,4 @@
-package Cadenas;
+package evaluacion_2.Cadenas;
 import java.util.Scanner;
 
 public class nombre {

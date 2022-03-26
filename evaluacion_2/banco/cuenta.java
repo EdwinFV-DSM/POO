@@ -1,4 +1,4 @@
-package banco;
+package evaluacion_2.banco;
 
 public class cuenta {
 

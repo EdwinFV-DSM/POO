@@ -1,4 +1,4 @@
-package IMC;
+package evaluacion_2.IMC;
 import java.util.Scanner;
 
 public class alumno {
