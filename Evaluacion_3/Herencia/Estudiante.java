@@ -34,5 +34,17 @@ public class Estudiante extends Persona{
 
     }
 
-    
+    public String Calificacion(double promedio){
+        String msg ="";
+        
+        while (promedio >= 0 || promedio <= 10) {
+            if (promedio < 8) {
+                msg = "Aprobado";
+            }else if(promedio > 10){
+                msg = "Reprobado";
+            }
+
+        }
+        return msg;
+    }
 }
