@@ -49,5 +49,20 @@ public class Persona {
         return msg;
     }
     
+    public int fechaSum(){
+        int suma = 0;
+        int aux = 0;
+        char a;
+        String texto;
+        for (int i = 0;i <= (fechaNac.length()-1); i++) {
+            a= fechaNac.charAt(i);
+            if(a!='/'){
+                texto=""+a;
+                aux = Integer.parseInt(texto);
+                suma= suma+aux;
+            }
+        }
+        return suma;
+    }
     
 }

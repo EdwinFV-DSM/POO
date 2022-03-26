@@ -22,14 +22,13 @@ public class Estudiante extends Persona{
     public double getPromedio() {
         return promedio;
     }
-    public void setPromedio(double promedio) {
-        this.promedio = promedio;
+    public Double setPromedio(double promedio) {
+        return this.promedio = promedio;
     }
     
     @Override public String mostrarDatos(){
         String msg = "";
-
-        msg = super.mostrarDatos()+" tu matricula es "+matricula+" con cedula "+promedio;
+        msg = super.mostrarDatos()+" tu matricula es "+matricula+" con promedio "+promedio+" la nota es: "+Calificacion();
         return msg;
 
     }
@@ -44,7 +43,8 @@ public class Estudiante extends Persona{
                 msg = "Aprobado";
             }
         }else{
-            msg = "false";
+            msg = "Reprobado";
+            promedio = 0;
         }
         return msg;
     }
