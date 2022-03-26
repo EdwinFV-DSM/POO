@@ -12,8 +12,9 @@ public class principal {
         System.out.println(P2.mostrarDatos());
 
         Estudiante E1 = new Estudiante();
-        Estudiante E2 = new Estudiante("Apolinar","12/12/1980", "UTVT", "55550000" ,"IC", 1234); 
+        Estudiante E2 = new Estudiante("Apolinar","12/12/1980", "UTVT", "55550000" ,"IC", 7); 
         System.out.println(P2.mostrarDatos());
+        System.out.println(E2.Calificacion());
     }
 
 }
