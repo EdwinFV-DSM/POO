@@ -12,7 +12,7 @@ public class Persona {
     public Persona(String nombre, String fechaNac, String domicilio, String telefono) {
         this.nombre = nombre;
         this.fechaNac = fechaNac;
-        Domicilio = domicilio;
+        this.Domicilio = domicilio;
         this.telefono = telefono;
     }
 
