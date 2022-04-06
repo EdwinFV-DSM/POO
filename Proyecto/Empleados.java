@@ -30,21 +30,22 @@ public class Empleados extends Persona {
     }
 
     public String obtenerSueldo(){
-
+        return "Tu sueldo es 0";
     }   
     
     public String validarTurno(){
         String msg = "";
 
         if (turno == "") {
-            msg = this.turno = "matutino";
+            turno = "Matutino";
+            msg = turno;
         }else{
             msg ="Tu turno es: "+turno;
         }
 
         return msg;
     }
-
+    @Override
     public String mostrarDatos(){
         String msg = "";
         msg = super.mostrarDatos()+"\nTu turno es: "+turno+"\nTu sueldo es: "+obtenerSueldo()+"\nTu departamento es: "+Departamento;
