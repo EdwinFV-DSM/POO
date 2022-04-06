@@ -6,7 +6,7 @@ public class index {
         Persona per2 = new Persona('M', "7221090131","30/07/03","Edwin Flores");
         System.out.println(per2.mostrarDatos());
 
-        Empleados EM = new Empleados('F', "7221090131","30/07/03","Johana","Recursos humanos","Vespertino");
+        Empleados EM = new Empleados('F', "7221090131","30/07/03","Johana","Recursos humanos"," ");
         EM.validarTurno();
         System.out.println(EM.mostrarDatos());
     }

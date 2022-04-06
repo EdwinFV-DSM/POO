@@ -21,7 +21,7 @@ public class pisocajeros extends Empleados {
     }
 
     public String obtenerSueldo(){
-
+        
     }
 
     public String mostrarDatos(){
