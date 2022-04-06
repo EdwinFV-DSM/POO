@@ -20,10 +20,10 @@ public class cliente extends Persona {
 
        return msg;
     }
-
+    
     public String mostrarDatos(){
         String msg = "";
-        msg = super.mostrarDatos()+"\nTu turno es: "+turno+"\nTu sueldo es: "+"\nTu departamento es: "+Departamento;
+        msg = super.mostrarDatos();
         return msg;
     }
 }

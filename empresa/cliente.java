@@ -6,7 +6,6 @@ public class cliente {
         Scanner op = new Scanner(System.in);
 
         String nombre;
-        int sala;
         int horas;
 
                 System.out.println("Ingrese el nombre");
