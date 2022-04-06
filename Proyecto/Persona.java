@@ -44,7 +44,7 @@ public class Persona {
     public String mostrarDatos(){
         String msg = "";
 
-        msg = "Tu nombre es: "+nombre+"\nTu fehca de nacimiento es: "+fechaNac+"\nTu telefono es: "+telefono;
+        msg = "Tu sexo es: "+sexo+"\nTu nombre es: "+nombre+"\nTu fecha de nacimiento es: "+fechaNac+"\nTu telefono es: "+telefono;
         return msg;
     }
     
