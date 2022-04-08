@@ -8,8 +8,6 @@ public class pisocajeros extends Empleados {
     public pisocajeros() {
     }
 
-    
-
     public pisocajeros(char sexo, String telefono, String fechaNac, String nombre, String departamento, String turno,
             String catego) {
         super(sexo, telefono, fechaNac, nombre, departamento, turno);
@@ -27,9 +25,9 @@ public class pisocajeros extends Empleados {
     public int obtenerSueldo() {
         int ht;
         int msg;
-        try (Scanner sc = new Scanner(System.in)) {
+        try (Scanner sc2 = new Scanner(System.in)) {
             System.out.println("Introduce las horas trabajadas:");
-            ht = sc.nextInt();
+            ht = sc2.nextInt();
         }
         if (catego == "piso" && ht <= 8) {
             int res1 = super.obtenerSueldo();

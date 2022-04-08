@@ -13,7 +13,7 @@ public class index {
         //pisocajeros8
         
          pisocajeros piso = new pisocajeros('F', "7221090131","30/07/03","Johana","Recursos Humanos", "", "piso");
-         piso.obtenerSueldo();
+          piso.obtenerSueldo();
          System.out.println(piso.mostrarDatos());
 
         //Cliente

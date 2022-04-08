@@ -1,10 +1,10 @@
 package Proyecto;
 
 public class Persona {
-    protected char sexo;
-    protected String telefono;
-    protected String fechaNac;
-    protected String nombre;
+     char sexo;
+     String telefono;
+     String fechaNac;
+     String nombre;
     
     public Persona() {
     }

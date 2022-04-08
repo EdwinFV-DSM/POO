@@ -32,7 +32,7 @@ public class Empleados extends Persona {
 
     public int obtenerSueldo() {
         /* ht = horas trabajadas */
-        int ht = 0;
+        int ht;
         int precio = 8;
         int msg;
         String turno = validarTurno();

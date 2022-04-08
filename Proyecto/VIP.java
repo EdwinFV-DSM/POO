@@ -1,17 +1,21 @@
 package Proyecto;
 
-public class VIP extends Persona{
+public class VIP extends cliente{
     String noCliente;
     String Fechaingreso;
     
     public VIP() {
     }
 
+    
+
     public VIP(char sexo, String telefono, String fechaNac, String nombre, String noCliente, String fechaingreso) {
         super(sexo, telefono, fechaNac, nombre);
         this.noCliente = noCliente;
         Fechaingreso = fechaingreso;
     }
+
+
 
     public String getNoCliente() {
         return noCliente;
