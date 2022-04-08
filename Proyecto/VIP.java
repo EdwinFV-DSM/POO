@@ -6,7 +6,7 @@ import java.time.format.DateTimeFormatter;
 public class VIP extends cliente {
     String noCliente;
     String Fechaingreso;
-    
+
     public VIP() {
     }
 
@@ -72,7 +72,7 @@ public class VIP extends cliente {
         String msg1 = "";
 
         msg1 = super.mostrarDatos() + "\n Tu numero de cliente es: " + noCliente + "\n Tu fecha de ingreso es: "
-                + Fechaingreso + "\n Gracias por tu compra: " + entarSorteo()+aE;
+                + Fechaingreso + "\n Gracias por tu compra: " + entarSorteo();
         return msg1;
     }
 }
