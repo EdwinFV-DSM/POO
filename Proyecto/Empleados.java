@@ -41,8 +41,9 @@ public class Empleados extends Persona {
             ht = sc.nextInt();
         }
         if (ht <= 8 && turno == "Matutino") {
-            int res1;
-            res1 = ht * precio;
+            int res1,res3;
+            res3 = ht - 10;
+            res1 = res3 * precio;
             msg = res1;
 
         } else if (ht <= 10 && turno == "Vespertino") {

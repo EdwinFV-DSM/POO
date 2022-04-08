@@ -1,16 +1,29 @@
 package Proyecto;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.logging.SimpleFormatter;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 public class VIP extends cliente {
     String noCliente;
     String Fechaingreso;
+    int dE, mE, aE;
+    int dE2, mE2, aE2;
+    String dia1, mes1, año1;
+    String dia2, mes2, año2;
+
+    DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/YYYY");
+    LocalDate fechaActual = LocalDate.now();
+    String formatoString = fechaActual.format(dtf);
 
     public VIP() {
     }
+
+    public VIP(String noCliente, String fechaingreso) {
+        this.noCliente = noCliente;
+        Fechaingreso = fechaingreso;
+    }
+
+
 
     public VIP(char sexo, String telefono, String fechaNac, String nombre, String noCliente, String fechaingreso) {
         super(sexo, telefono, fechaNac, nombre);
@@ -38,10 +51,29 @@ public class VIP extends cliente {
         String msg = "";
         int res;
 
-        int iTest = Integer.parseInt(Fechaingreso);
-       
+        dia1 = Fechaingreso.split("/")[0];
+        mes1 = Fechaingreso.split("/")[1];
+        año1 = Fechaingreso.split("/")[2];
+        dE = Integer.parseInt(dia1);
+        mE = Integer.parseInt(mes1);
+        aE = Integer.parseInt(año1);
 
-        if (super.generarComprar() >= 1000 && iTest >= 500) {
+        dia2 = formatoString.split("/")[0];
+        mes2 = formatoString.split("/")[1];
+        año2 = formatoString.split("/")[2];
+        dE2 = Integer.parseInt(dia2);
+        mE2 = Integer.parseInt(mes2);
+        aE2 = Integer.parseInt(año2);
+
+        // int resta =mE2-mE;
+
+        // && aE<aE2 && resta>=4 CONDICION QUEIBRA EL PROGRAMA
+        // System.out.println(formatoString); IMPRIME FECHA ACTUAL
+
+        // fechanumero=Integer.parseInt(fechaIngreso); CONVIERTE A INT
+        // System.out.println(fechanumero); MUESTRA FECHA ENTERO ERROR XD
+
+        if (super.generarComprar() >= 1000 & aE < aE2 & mE <= mE2 & aE > 2004) {
             msg = "Alcanzaste un premio";
             res = (int) (Math.random() * (10 - 1)) + 1;
             switch (res) {

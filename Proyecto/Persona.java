@@ -43,13 +43,37 @@ public class Persona {
 
     public String sumaNombre(){
         String msg = "";
-        char[] myChars = nombre.toCharArray();
-        nombre.split(" ");
+        int valor = 0;
+        String[] partes = nombre.split(" ");
+        String parte11, parte12, parteM1;
         int contar = 0;
-        for (int pal = 0; pal < myChars.length; pal++) {
-            contar=contar+1;
+        int sum = 0;
+        for (int pal = 0; pal < partes.length; pal++) {
+            parte11 = partes[pal].substring(0, 1).toUpperCase();
+            parte12 = partes[pal].substring(1).toLowerCase();
+            // parteM1 = parte11 + parte12;
+            
+            char[] myChars = partes[pal].toCharArray();
+            for(int p = 0; p < myChars.length; p++){
+                
+            
+            int res = 0;
+                // System.out.println(valor=(int)nombre.charAt(i) );
+                // suma+=(int)nombre.charAt(i);
+                valor=(int)myChars[p];
+                // System.out.println(valor);
+                // int sum = 0;
+                // System.out.println(sum);
+                // System.out.println(myChars[p]);
+                // System.out.println(Cadena.charAt(p));
+                // contar=contar+1;
+                System.out.println("La cadena es "+myChars[p]+" Su valor es de "+valor);
+                sum = valor + sum;  
+                // msg = "La suma de tu nombre es: "+sum;
+            } 
+                System.out.println("La suma de todos los valores es: "+sum);
         }
-        msg = "La suma de tu nombre es: "+contar;
+        
         return msg;
     }
 
