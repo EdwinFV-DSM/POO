@@ -67,7 +67,7 @@ public class Persona {
                 // System.out.println(myChars[p]);
                 // System.out.println(Cadena.charAt(p));
                 // contar=contar+1;
-                System.out.println("La cadena es "+myChars[p]+" Su valor es de "+valor);
+                // System.out.println("La cadena es "+myChars[p]+" Su valor es de "+valor);
                 sum = valor + sum;  
                 // msg = "La suma de tu nombre es: "+sum;
             } 

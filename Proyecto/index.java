@@ -32,7 +32,8 @@ do{
                 System.out.println(p2.mostrarDatos());
             }
             case 3 -> {
-                VIP p3 = new VIP('M',"7221090131","30/06/2003","Edwin Flores","12345","20/09/2003");
+                VIP p3 = new VIP('M',"7221090131","30/06/2003","Edwin Flores","12345","20/09/2005");
+                p3.generarComprar();
                 System.out.println(p3.mostrarDatos());
             }
             case 4 -> {
@@ -47,7 +48,7 @@ do{
 
             }
             case 6 -> {
-                pisocajeros p6 = new pisocajeros('F',"7221090131","30/06/31","Edwin Flores","Recursos Humanos", "","cajero");
+                pisocajeros p6 = new pisocajeros('F',"7221090131","30/06/31","Edwin Flores","Recursos Humanos", "diruno","cajero");
                 System.out.println(p6.mostrarDatos());
                 System.out.println(p6.obtenerSueldo());
 

@@ -37,14 +37,15 @@ public class cliente extends Persona {
 			System.out.println("Ingrese el precio del producto");
 			precio = Double.parseDouble(obj.nextLine());
 			producto = producto + 1;
-			System.out.println("para salir del sistema digite exit");
-			salir = obj.nextLine();
 			precio2 = precio;
 			total = precio + total;
 			System.out.println(precio);
-			
 
-		} while (!salir.equalsIgnoreCase("exit"));
+
+			System.out.println("Ingrese el nombre del producto");
+			articulo = obj.nextLine();
+
+		} while (!articulo.equalsIgnoreCase("exit"));
         System.out.println("Total de articulos comprados son: " + producto);
 		System.out.println("El total a pagar es: " + total);
 		System.out.println("¿Con cuanto pagara?");
