@@ -1,9 +1,9 @@
 package Proyecto;
 
-public class Administrativo extends Empleados{
+public class Administrativo extends Empleados {
     String carrera;
     String puesto;
-    
+
     public Administrativo() {
     }
 
@@ -30,13 +30,43 @@ public class Administrativo extends Empleados{
         this.puesto = puesto;
     }
 
-    public int obeterSueldo(){
-        return 0;
-    }   
     @Override
-    public String mostrarDatos(){
+    public double obtenerSueldo() {
+
+        double aumento, sueldoFinal;
+        if (validarTurno().equalsIgnoreCase("matutino")) {
+            int horas = 8;
+            sueldoBase = 150;
+            sueldoBase = horas * sueldoBase;
+            System.out.println("SUELDO BASE: $" + sueldoBase);
+            aumento = sueldoBase * .20;
+            System.out.println("AUMENTO: $" + aumento);
+            sueldoFinal = sueldoBase + aumento;
+            System.out.print("SUELDO FINAL: $");
+            return sueldoFinal;
+
+        } else if (validarTurno().equalsIgnoreCase("vespertino")) {
+
+            int horas = 10;
+            sueldoBase = 150;
+            sueldoBase = horas * sueldoBase;
+            System.out.println("SUELDO BASE: $" + sueldoBase);
+            aumento = sueldoBase * .20;
+            System.out.println("AUMENTO: $" + aumento);
+            sueldoFinal = sueldoBase + aumento;
+            System.out.print("SUELDO FINAL: $");
+            return sueldoFinal;
+
+        }
+        return 0;
+
+    }
+
+    @Override
+    public String mostrarDatos() {
         String msg = "";
-        msg = super.mostrarDatos()+"\nTu turno es: "+turno+"\nTu sueldo es: "+obtenerSueldo()+"\nTu departamento es: "+Departamento;
+        msg = super.mostrarDatos() + "\nTu turno es: " + turno + "\nTu sueldo es: " + obtenerSueldo()
+                + "\nTu departamento es: " + Departamento+ "\n Tu carrera es: "+carrera;
         return msg;
     }
 }

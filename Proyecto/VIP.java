@@ -74,8 +74,8 @@ public class VIP extends cliente {
         // System.out.println(fechanumero); MUESTRA FECHA ENTERO ERROR XD
 
         if (super.generarComprar() >= 1000 & aE < aE2 & mE <= mE2 & aE > 2004) {
-            msg = "Alcanzaste un premio";
-            res = (int) (Math.random() * (10 - 1)) + 1;
+            System.out.println("Alcanzaste un premio");
+            res = (int) (Math.random() * (4 - 1));
             switch (res) {
                 case 1:
                     msg = "Television";

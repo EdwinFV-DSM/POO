@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class Empleados extends Persona {
     String Departamento;
     String turno;
+    double sueldoBase=8;
 
     public Empleados() {
     }
@@ -29,8 +30,8 @@ public class Empleados extends Persona {
     public void setTurno(String turno) {
         this.turno = turno;
     }
-
-    public int obtenerSueldo() {
+    
+    public double obtenerSueldo() {
         /* ht = horas trabajadas */
         int ht;
         int precio = 8;

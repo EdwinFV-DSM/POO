@@ -4,10 +4,11 @@ public class ocasionales extends cliente {
     String fechaCompra;
 
     
-    public ocasionales(char c, String string, String string2, String string3, String string4, String string5) {
+    
+    public ocasionales() {
     }
 
-    
+
     public ocasionales(char sexo, String telefono, String fechaNac, String nombre, String fechaCompra) {
         super(sexo, telefono, fechaNac, nombre);
         this.fechaCompra = fechaCompra;
@@ -23,6 +24,6 @@ public class ocasionales extends cliente {
     }
     @Override
     public String mostrarDatos() {
-        return "";
+        return super.mostrarDatos()+"\nFECHA DE LA COMPRA: "+fechaCompra;
     }
 }

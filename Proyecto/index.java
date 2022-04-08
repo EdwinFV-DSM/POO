@@ -32,30 +32,29 @@ do{
                 System.out.println(p2.mostrarDatos());
             }
             case 3 -> {
-                VIP p3 = new VIP('M',"7221090131","30/06/31","Edwin Flores","12345","20/09/2022");
+                VIP p3 = new VIP('M',"7221090131","30/06/2003","Edwin Flores","12345","20/09/2003");
                 System.out.println(p3.mostrarDatos());
             }
             case 4 -> {
-                ocasionales p3 = new ocasionales('M',"7221090131","30/06/31","Edwin Flores","12345","20/09/2022");
+                ocasionales p3 = new ocasionales('M',"7221090131","30/06/31","Edwin Flores","20/09/2022");
                 System.out.println(p3.mostrarDatos());
             }
             case 5 -> {
 
-                Empleados p5 = new Empleados();
-                Empleados p3 = new Empleados('M',"7221090131","30/06/31","Edwin Flores","12345","20/09/2022");
-                System.out.println(p5.mostrarDatos());
-                System.out.println(p5.obtenerSueldo());
+                Empleados p3 = new Empleados('M',"7221090131","30/06/31","Edwin Flores","cajero","");
+                System.out.println(p3.mostrarDatos());
+                // System.out.println(p3.obtenerSueldo());
 
             }
             case 6 -> {
-                pisocajeros p6 = new pisocajeros('F',"7221090131","30/06/31","Edwin Flores","01/02/2000", "piso","cajero");
+                pisocajeros p6 = new pisocajeros('F',"7221090131","30/06/31","Edwin Flores","Recursos Humanos", "","cajero");
                 System.out.println(p6.mostrarDatos());
                 System.out.println(p6.obtenerSueldo());
 
             }
             case 7 -> {
 
-                Administrativo p7 = new Administrativo('M', "JEFAZO", "SALCHICHONERIA", "vespertino", "NEGOCIOS", "72325555", "01/02/2000", "AURONPLAY");
+                Administrativo p7 = new Administrativo('M', "72221090131", "09/09/12", "Jose", "NEGOCIOS", "Vespertino", "Tics", "Administrativo");
                 System.out.println(p7.mostrarDatos());
                 System.out.println(p7.obtenerSueldo());
 
