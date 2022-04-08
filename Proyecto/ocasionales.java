@@ -21,7 +21,7 @@ public class ocasionales extends cliente {
     public void setFechaCompra(String fechaCompra) {
         this.fechaCompra = fechaCompra;
     }
-
+    @Override
     public String mostrarDatos() {
         return "";
     }

@@ -33,8 +33,8 @@ public class Administrativo extends Empleados{
     public int obeterSueldo(){
         return 0;
     }   
-
-    public String mostarDatos(){
+    @Override
+    public String mostrarDatos(){
         String msg = "";
         msg = super.mostrarDatos()+"\nTu turno es: "+turno+"\nTu sueldo es: "+obtenerSueldo()+"\nTu departamento es: "+Departamento;
         return msg;

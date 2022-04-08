@@ -55,7 +55,7 @@ public class cliente extends Persona {
         return msg;
 	}
     
-    
+    @Override
     public String mostrarDatos(){
         String msg = "";
         msg = super.mostrarDatos();

@@ -57,7 +57,7 @@ public class Empleados extends Persona {
         } else {
             msg = 0 ;
         }
-        return msg;
+        return msg;        
     }
 
     public String validarTurno(){
@@ -75,7 +75,7 @@ public class Empleados extends Persona {
     @Override
     public String mostrarDatos(){
         String msg = "";
-        msg = super.mostrarDatos()+"\nTu turno es: "+turno+"\n Tu salario es el siguiente: "+obtenerSueldo()+"\nTu departamento es: "+Departamento;
+        msg = super.mostrarDatos()+"\nTu turno es: "+validarTurno()+"\n Tu salario es el siguiente: "+obtenerSueldo()+"\nTu departamento es: "+Departamento;
         return msg;
     }
     

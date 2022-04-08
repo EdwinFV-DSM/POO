@@ -52,6 +52,7 @@ public class Persona {
         msg = "La suma de tu nombre es: "+contar;
         return msg;
     }
+
     public String mostrarDatos(){
         String msg = "";
 
