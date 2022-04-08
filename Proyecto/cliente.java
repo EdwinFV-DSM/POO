@@ -11,7 +11,7 @@ public class cliente extends Persona {
         super(sexo, telefono, fechaNac, nombre);
     }
     
-    public String generarComprar(){
+    public double generarComprar(){
         Scanner obj = new Scanner(System.in);
         String msg = "";
 		String articulo;
@@ -52,7 +52,7 @@ public class cliente extends Persona {
 		pago = total - metodo;
 		System.out.println("Su cambio es: " + pago);
 		msg = "\nSu cambio es: " + pago;
-        return msg;
+        return total;
 	}
     
     @Override

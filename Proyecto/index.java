@@ -20,9 +20,9 @@ public class index {
   //     System.out.println("Introduce las horas trabajadas:");
   //     ht = sc.nextInt();
   // }
-    pisocajeros piso = new pisocajeros('F', "7221090131", "30/07/03", "Johana", "Recursos Humanos", "", "");
-    piso.obtenerSueldo();
-    System.out.println(piso.mostrarDatos());
+    // pisocajeros piso = new pisocajeros('F', "7221090131", "30/07/03", "Johana", "Recursos Humanos", "", "");
+    // piso.obtenerSueldo();
+    // System.out.println(piso.mostrarDatos());
 
     // Cliente
 
@@ -30,5 +30,8 @@ public class index {
     // cli.generarComprar();
     // System.out.println(cli.mostrarDatos());
 
+    // VIP
+    VIP vip = new VIP('F', "7221090131", "30-07-22", "Johana", "12345", "2022-06-02");
+    System.out.println(vip.mostrarDatos());
   }
 }
