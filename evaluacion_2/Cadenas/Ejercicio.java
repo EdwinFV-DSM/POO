@@ -21,7 +21,7 @@ public class Ejercicio {
             // System.out.println(valor);
             // int sum = 0;
             // System.out.println(sum);
-            // System.out.println(myChars[p]);
+            System.out.println(myChars[p]);
             // System.out.println(Cadena.charAt(p));
             // contar=contar+1;
             System.out.println("La cadena es "+myChars[p]+" Su valor es de "+valor);

@@ -30,11 +30,11 @@ public class Empleados extends Persona {
         this.turno = turno;
     }
 
-    public String obtenerSueldo() {
+    public int obtenerSueldo() {
         /* ht = horas trabajadas */
         int ht = 0;
         int precio = 8;
-        String msg = "";
+        int msg;
         String turno = validarTurno();
         try (Scanner sc = new Scanner(System.in)) {
             System.out.println("Introduce las horas trabajadas:");
@@ -43,15 +43,19 @@ public class Empleados extends Persona {
         if (ht <= 8 && turno == "Matutino") {
             int res1;
             res1 = ht * precio;
-            msg = ""+res1;
+            msg = res1;
 
         } else if (ht <= 10 && turno == "Vespertino") {
             int res2;
+            /**
+             * 8 <=10
+             * 8-10
+             */
             res2 = ht - 10;
             int valor = res2 * precio;
-            msg = ""+valor;
+            msg = valor;
         } else {
-            msg = "No cumples con las horas asignadas";
+            msg = 0 ;
         }
         return msg;
     }

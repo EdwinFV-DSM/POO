@@ -1,10 +1,10 @@
 package Proyecto;
 
 public class Persona {
-    char sexo;
-    String telefono;
-    String fechaNac;
-    String nombre;
+    protected char sexo;
+    protected String telefono;
+    protected String fechaNac;
+    protected String nombre;
     
     public Persona() {
     }
@@ -40,11 +40,22 @@ public class Persona {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-    
+
+    public String sumaNombre(){
+        String msg = "";
+        char[] myChars = nombre.toCharArray();
+        nombre.split(" ");
+        int contar = 0;
+        for (int pal = 0; pal < myChars.length; pal++) {
+            contar=contar+1;
+        }
+        msg = "La suma de tu nombre es: "+contar;
+        return msg;
+    }
     public String mostrarDatos(){
         String msg = "";
 
-        msg = "Tu sexo es: "+sexo+"\nTu nombre es: "+nombre+"\nTu fecha de nacimiento es: "+fechaNac+"\nTu telefono es: "+telefono;
+        msg = "Tu sexo es: "+sexo+"\nTu nombre es: "+nombre+"\nTu fecha de nacimiento es: "+fechaNac+"\nTu telefono es: "+telefono+"\n"+sumaNombre();
         return msg;
     }
     

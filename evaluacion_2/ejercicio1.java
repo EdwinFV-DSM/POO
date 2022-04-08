@@ -1,7 +1,6 @@
 package evaluacion_2;
 import java.util.Scanner;
 
-import javax.management.ValueExp;
 
 public class ejercicio1 {
     public static void main(String[] args) {
@@ -17,7 +16,8 @@ public class ejercicio1 {
          * preguntar con cuanto va a pagar el cliente y devolverle la cantidad de
          * cambio.
          */
-        String articulo;
+        String articulo = "";
+        System.out.println(articulo);
         int precio = 0, pago, metodo, total, producto = 1;
         String salir = "exit";
         try (Scanner obj = new Scanner(System.in)) {
@@ -32,10 +32,7 @@ public class ejercicio1 {
             while (salir == "e") {
                 total = precio + precio;
                 System.out.println("Total de productos comprados son: " + producto);
-                System.err.println("El total a pagar es: $" + total + " y sele hara un descuento del 10%");
-                total = total * 10;
-                total = total / 100;
-                System.err.println("El total a pagar con descuento es: " + total);
+                System.err.println("El total a pagar es: $" + total);
                 System.err.println("¿Con cuanto pagara?");
                 metodo = obj.nextInt();
                 pago = metodo - total;

@@ -23,6 +23,6 @@ public class ocasionales extends cliente {
     }
 
     public String mostrarDatos() {
-        
+        return "";
     }
 }

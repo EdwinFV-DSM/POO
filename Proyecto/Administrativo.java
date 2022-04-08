@@ -30,8 +30,8 @@ public class Administrativo extends Empleados{
         this.puesto = puesto;
     }
 
-    public String obeterSueldo(){
-
+    public int obeterSueldo(){
+        return 0;
     }   
 
     public String mostarDatos(){

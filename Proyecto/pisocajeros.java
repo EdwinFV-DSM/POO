@@ -2,14 +2,17 @@ package Proyecto;
 
 import java.util.Scanner;
 
-public class pisocajeros extends Persona {
+public class pisocajeros extends Empleados {
     String catego;
 
     public pisocajeros() {
     }
 
-    public pisocajeros(char sexo, String telefono, String fechaNac, String nombre, String catego) {
-        super(sexo, telefono, fechaNac, nombre);
+    
+
+    public pisocajeros(char sexo, String telefono, String fechaNac, String nombre, String departamento, String turno,
+            String catego) {
+        super(sexo, telefono, fechaNac, nombre, departamento, turno);
         this.catego = catego;
     }
 
@@ -21,21 +24,21 @@ public class pisocajeros extends Persona {
         this.catego = catego;
     }
 
-    public String obtenerSueldo() {
+    public int obtenerSueldo() {
         int ht;
-        String msg = "";
+        int msg;
         try (Scanner sc = new Scanner(System.in)) {
             System.out.println("Introduce las horas trabajadas:");
             ht = sc.nextInt();
         }
         if (catego == "piso" && ht <= 8) {
-            int res1;
+            int res1 = super.obtenerSueldo();
             res1 = ht * 8;
             res1 = res1 * 10;
-            msg = "" + res1;
+            msg = res1;
 
         } else {
-            msg = "El area ingresada no se encuentra";
+            msg = 0;
         }
         return msg;
     }

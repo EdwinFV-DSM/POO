@@ -4,7 +4,6 @@ import java.util.Scanner;
 public class alumno {
     public static void main(String[] args) {
         try (Scanner obj = new Scanner(System.in)) {
-            validacion eje = new validacion();
             String nombre;
             int edad;
             double calificacion;
