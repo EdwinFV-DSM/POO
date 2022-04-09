@@ -1,7 +1,8 @@
 package Proyecto;
 
 import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
+import java.util.*;
 
 public class VIP extends cliente {
     String noCliente;
@@ -42,26 +43,37 @@ public class VIP extends cliente {
     public String entarSorteo() {
         String msg = "";
         int res;
-        if ((super.generarComprar() >= 1000)) {
-            System.out.println("Alcanzaste un premio");
-            res = (int) (Math.random() * (4 - 1));
+        LocalDate fecha_I = LocalDate.parse(Fechaingreso);
+
+        LocalDate fecha_hoy = LocalDate.now();
+
+        int dias = (int)ChronoUnit.DAYS.between(fecha_I, fecha_hoy);
+        LocalDate fecha_II = LocalDate.parse(Fechaingreso);
+        int y = (int)ChronoUnit.YEARS.between(fecha_II, fecha_hoy);
+
+        // System.out.println(y);
+        if ((super.generarComprar() >= 1000) && (dias >= 500) && (y >= 18)) {
+            double resu = generarComprar();
+            res = (int) (Math.random()*5);
             switch (res) {
                 case 1:
-                    msg = "Television";
+                    msg = "Ingresaste a un sorteo por la compra minima de: "+resu+" y Ganaste un: Television";
                     break;
                 case 2:
-                    msg = "Celular";
+                    msg = "Ingresaste a un sorteo por la compra minima de: "+resu+" y Ganaste un: Celular";
                     break;
                 case 3:
-                    msg = "$2000 pesos";
+                    msg = "Ingresaste a un sorteo por la compra minima de: "+resu+" y Ganaste un: $2000 pesos";
                     break;
                 case 4:
-                    msg = "Plancha";
+                    msg = "Ingresaste a un sorteo por la compra minima de: "+resu+" y Ganaste un: Plancha";
                     break;
                 default:
-                    msg = "Nada";
+                    msg = "Ingresaste a un sorteo por la compra minima de: "+resu+" y Ganaste un: Nada";
                     break;
             }
+        }else{
+            msg = "No ingreso a sorteo";
         }
 
         return msg;
@@ -72,7 +84,7 @@ public class VIP extends cliente {
         String msg1 = "";
 
         msg1 = super.mostrarDatos() + "\n Tu numero de cliente es: " + noCliente + "\n Tu fecha de ingreso es: "
-                + Fechaingreso + "\n Gracias por tu compra: " + entarSorteo();
+                + Fechaingreso + "\n Gracias por tu compra de: "+entarSorteo();
         return msg1;
     }
 }

@@ -32,8 +32,8 @@ do{
                 System.out.println(p2.mostrarDatos());
             }
             case 3 -> {
-                VIP p3 = new VIP('M',"7221090131","30/06/2003","Edwin Flores","12345","20/09/2005");
-                p3.generarComprar();
+                VIP p3 = new VIP('M',"7221090131","30/06/2003","Edwin Flores","12345","2003-06-30");
+                // p3.generarComprar();
                 System.out.println(p3.mostrarDatos());
             }
             case 4 -> {
