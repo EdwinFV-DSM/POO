@@ -64,15 +64,20 @@ public class Empleados extends Persona {
 
     public String validarTurno(){
         String msg = "";
+        String matutino = "MATUTINO";
+        String Vespertino = "VESPERTINO";
 
-        if (turno == "" || turno == " ") {
+        if (turno.equalsIgnoreCase(matutino) || turno == "" || turno == " ") {
             turno = "Matutino";
             msg = turno;
-        }else{
+        }else if (turno.equalsIgnoreCase(Vespertino) || turno == "Vespertino") {
+
             msg = turno;
         }
+        turno = "Matutino";
+         msg = turno;
 
-        return msg;
+    return msg;
     }
     @Override
     public String mostrarDatos(){
